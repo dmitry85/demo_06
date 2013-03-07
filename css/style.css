@@ -1,0 +1,279 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {
+    margin:0;
+    padding:0;
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+fieldset,img {
+    border:0;
+}
+address,caption,cite,code,dfn,th,var {
+    font-style:normal;
+    font-weight:normal;
+}
+ol,ul {
+    list-style:none;
+}
+caption,th {
+    text-align:left;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-size:100%;
+    font-weight:normal;
+}
+q:before,q:after {
+    content:'';
+}
+abbr,acronym { border:0;
+}
+html {
+	height: 100%;
+}
+header, nav, section, article, aside, footer {
+	display: block;
+}
+body {
+	font: 12px/18px Arial, Tahoma, Verdana, sans-serif;
+	width: 100%;
+	height: 100%;
+}
+a {
+	color: blue;
+	outline: none;
+	text-decoration: underline;
+}
+a:hover {
+	text-decoration: none;
+}
+p {
+	margin: 0 0 18px
+}
+img {
+	border: none;
+}
+input {
+	vertical-align: middle;
+}
+#wrapper {
+	width: 967px;
+	margin: 0 auto;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+}
+
+
+/* Header
+-----------------------------------------------------------------------------*/
+#header {
+	width: 967px;
+    overflow:  hidden;
+    padding-top: 60px;
+}
+.phone {
+    float: right;
+    background-image: url("../img/phone.png");
+    background-repeat: no-repeat;
+    font: 28px Myriad Pro;
+    color: #4d4d4f;
+    padding-left: 35px;
+    margin-right: 20px;
+}
+.logo {
+    float: left;
+    margin-top: 40px;
+}
+.menu {
+    float: right;
+    background-image: url("../img/menu_bg.png");
+    background-repeat: repeat-x;
+    height: 48px;
+    width: 725px;
+    margin-top: 10px;
+}
+.menu li a {
+    color: #333;
+    text-decoration: none;
+    float:  left;
+    font: 20px Myriad Pro;
+    margin: 10px 60px 10px 10px;
+}
+.menu li a:hover, .menu li a:active {
+    color: #e81e25;
+}
+
+
+/* Middle
+-----------------------------------------------------------------------------*/
+#middle {
+	width: 100%;
+	position: relative;
+    overflow: hidden;
+}
+#slides {
+    position: relative;
+}
+.slides_container {
+    width:967px;
+    height:417px;
+}
+.slides_container .content {
+    width:967px;
+    height:417px;
+    display:block;
+}
+.content {
+    width: 967px;
+    height: 417px;
+    background-image: url("../img/slide_pic.png");
+    background-repeat: no-repeat;
+}
+.content {
+    width: 100%;
+    float: left;
+}
+.slideText {
+    width: 385px;
+    float: right;
+    margin-top: 140px;
+}
+.slideText h2 a {
+    font: 34px Myriad Pro;
+    color: #000;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+.slideText h2 a span {
+    color: #e81e25;
+}
+.slideText h3 {
+    font: 18px Myriad Pro;
+    color: #464646;
+}
+.slideText p {
+    font: 11px Myriad Pro;
+    color: #494949;
+    line-height: 20px;
+}
+.slideText p a {
+    color: #e81e25;
+}
+.content img {
+    margin-top: 35px;
+}
+.pagination {
+    width:130px;
+    position: absolute;
+    right: 0px;
+    bottom: 50px;
+    z-index: 100;
+}
+
+.pagination li {
+    float:left;
+    margin:0 5px;
+    list-style:none;
+}
+
+.pagination li a {
+    display:block;
+    width:21px;
+    height:6px;
+    padding-top:12px;
+    background-image: url("../img/result.png");
+    background-position:0 0;
+    float:left;
+    overflow:hidden;
+    text-indent: -99999px;
+}
+
+.pagination li.current a {
+    background-position:0 -28px;
+}
+.post {
+    width: 100%;
+    float: left;
+    height: 256.5px;
+}
+.aboutUs {
+    float: left;
+    width: 470px;
+}
+.ourSolutions {
+    float: right;
+}
+.aboutUs h2 {
+    display: block;
+    width: 100%;
+    float: left;
+    padding: 16px 0 20px;
+}
+.aboutUs h2 a {
+    font: 30px Myriad Pro;
+    color: #e81e25;
+    text-decoration: none;
+}
+.aboutUs h2 a span {
+    color: #4d4d4f;
+}
+.aboutUs img {
+    float: left;
+    margin-right: 10px;
+}
+.aboutUs p {
+    font: 12px Arial;
+    color: #494949;
+    line-height: 16px;
+}
+.aboutUs a {
+    font: 11px Arial;
+    color: #e81e25  ;
+}
+
+/* Footer
+-----------------------------------------------------------------------------*/
+#footer {
+	width: 967px;
+	margin: 0px auto;
+	height: 110px;
+}
+.clients {
+    width: 100%;
+    background-image: url("../img/bottom_bg.png");
+    background-repeat: repeat-x;
+    height: 65px;
+    display: table;
+}
+.clients li {
+    display: table-cell;
+    margin: 20px 0 0 0;
+    padding-left: 30px;
+    vertical-align: middle;
+}
+.clients li:first-child {
+    padding-left: 0px;
+}
+.clients li span {
+    font: 23px Myriad Pro;
+    color: #7d7d7d;
+}
+.copyright {
+    float: left;
+    margin-top: 15px;
+}
+.copyright li {
+    float: left;
+    font: 11px Arial;
+    color: #5b5b5b;
+}
+.copyright li a {
+    font: 11px Arial;
+    color: #5b5b5b;
+    text-decoration: none;
+    margin-left: 10px;
+}
+.copyright li a:hover {
+    text-decoration: underline;
+}
