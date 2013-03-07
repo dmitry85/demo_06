@@ -119,48 +119,48 @@ input {
     width:967px;
     height:417px;
 }
-.slides_container .content {
+.slides_container .showcase {
     width:967px;
     height:417px;
     display:block;
 }
-.content {
+.showcase {
     width: 967px;
     height: 417px;
     background-image: url("../img/slide_pic.png");
     background-repeat: no-repeat;
 }
-.content {
+.showcase {
     width: 100%;
     float: left;
 }
-.slideText {
+.slide-text {
     width: 385px;
     float: right;
     margin-top: 140px;
 }
-.slideText h2 a {
+.slide-text h1 a {
     font: 34px Myriad Pro;
     color: #000;
     text-decoration: none;
     margin-bottom: 10px;
 }
-.slideText h2 a span {
+.slide-text h1 a span {
     color: #e81e25;
 }
-.slideText h3 {
+.slide-text h3 {
     font: 18px Myriad Pro;
     color: #464646;
 }
-.slideText p {
+.slide-text p {
     font: 11px Myriad Pro;
     color: #494949;
     line-height: 20px;
 }
-.slideText p a {
+.slide-text p a {
     color: #e81e25;
 }
-.content img {
+.showcase img {
     margin-top: 35px;
 }
 .pagination {
@@ -197,39 +197,43 @@ input {
     float: left;
     height: 256.5px;
 }
-.aboutUs {
+.about-us {
     float: left;
     width: 470px;
 }
-.ourSolutions {
+.our-solutions {
     float: right;
 }
-.aboutUs h2 {
+.about-us .subtitle {
     display: block;
     width: 100%;
     float: left;
     padding: 16px 0 20px;
 }
-.aboutUs h2 a {
+.about-us .subtitle a {
     font: 30px Myriad Pro;
     color: #e81e25;
     text-decoration: none;
 }
-.aboutUs h2 a span {
+.about-us .subtitle a span {
     color: #4d4d4f;
 }
-.aboutUs img {
+.about-us img {
     float: left;
     margin-right: 10px;
 }
-.aboutUs p {
+.about-us p {
     font: 12px Arial;
     color: #494949;
     line-height: 16px;
 }
-.aboutUs a {
+.about-us .arrow {
     font: 11px Arial;
-    color: #e81e25  ;
+    color: #e81e25;
+    background-image: url("../img/arrows.png");
+    background-repeat: no-repeat;
+    padding-left: 10px;
+    background-position: 0% 50%;
 }
 
 /* Footer
@@ -239,12 +243,18 @@ input {
 	margin: 0px auto;
 	height: 110px;
 }
-.clients {
+.clients-block {
+    float: left;
     width: 100%;
     background-image: url("../img/bottom_bg.png");
     background-repeat: repeat-x;
     height: 65px;
     display: table;
+    margin-bottom: 15px;
+}
+.clients {
+    float: left;
+    margin-top: 13px;
 }
 .clients li {
     display: table-cell;
@@ -252,23 +262,29 @@ input {
     padding-left: 30px;
     vertical-align: middle;
 }
-.clients li:first-child {
-    padding-left: 0px;
-}
-.clients li span {
+.clients-block p {
     font: 23px Myriad Pro;
     color: #7d7d7d;
-}
-.copyright {
     float: left;
-    margin-top: 15px;
+    margin-top: 19px;
+}
+footer span {
+    float: left;
+    margin-left: 0px !important;
 }
 .copyright li {
     float: left;
     font: 11px Arial;
     color: #5b5b5b;
 }
-.copyright li a {
+.copyright li:after {
+    content: "/";
+    margin-left: 10px;
+}
+.copyright li:last-child:after {
+    content: "";
+}
+.copyright li a, footer span {
     font: 11px Arial;
     color: #5b5b5b;
     text-decoration: none;
